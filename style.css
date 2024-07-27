@@ -1,0 +1,130 @@
+:root {
+  --almost-White: hsl(0, 0%, 98%);
+  --medium-Gray: hsl(0, 0%, 41%);
+  --almost-Black: hsl(0, 0%, 8%);
+  --font-size: 18px;
+}
+
+body {
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+  font-size: var(--font-size);
+  color: var(--almost-Black);
+  background-color: #ededed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  align-items: center;
+  margin-top: 30px;
+}
+
+select {
+  border: none;
+  color: var(--almost-Black);
+  text-decoration: none;
+  font-size: var(--font-size);
+  text-transform: capitalize;
+  margin-left: 10px;
+  background-color: transparent;
+  color: var(--medium-Gray);
+}
+select:hover {
+  cursor: pointer;
+  color: var(--almost-Black);
+}
+
+option{
+  padding: 30px;
+  border-radius: 3px;
+}
+
+header .left {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+header .left .links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: var(--medium-Gray);
+}
+header .left .links a:hover{
+  color: var(--almost-Black);
+}
+header .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+
+header .right .login {
+  cursor: pointer;
+  color: var(--medium-Gray);
+}
+
+header .right .login:hover{
+  color: var(--almost-Black);
+}
+
+header .right .reg {
+  padding: 5px 15px;
+  border: var(--almost-Black) 1px solid;
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--medium-Gray);
+}
+
+header .right .reg:hover {
+  color: var(--almost-Black);
+}
+/* start hero section  */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.hero-section .left {
+  width: 40%;
+}
+
+.hero-section .left h1 {
+  font-size: 70px;
+}
+
+.hero-section .left p {
+  line-height: 1.5;
+}
+
+.hero-section .left .links {
+  margin-top: 30px;
+  display: flex;
+
+  align-items: center;
+}
+
+.hero-section .left .links img {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.hero-section .right img {
+  width: 320px;
+}
+
+.hero-section .btn {
+  background-color: var(--almost-Black);
+  padding: 15px 25px;
+  color: var(--almost-White);
+  width: fit-content;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 50px;
+}
